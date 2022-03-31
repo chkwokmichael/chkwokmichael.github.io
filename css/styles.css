@@ -1,0 +1,376 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  transition: .5s;
+}
+.navbar {
+  padding: 1em 3em 0.5em;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.dotted-hr {
+  border-color: #90b0e3;
+  border-style: dotted none none none;
+  border-width: 0.5em;
+  width: 10%;
+  margin-top: 5%;
+}
+
+.sections-title {
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+}
+
+.container-fluid {
+  margin: 0;
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
+
+.hideme {
+    opacity:0;
+}
+
+.welcoming {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+.web-title {
+  animation-name: fadeIn-title;
+  animation-duration: 2.8s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn-title {
+  0% {opacity: 0;}
+  20% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.tag-line-text li {
+  display: inline-block;
+  opacity: 1;
+  transition: all 3.5s ease;
+}
+
+.tag-line-text ul {
+  padding: 0;
+}
+
+.tag-line-text li:nth-child(3) {
+  margin-right: 0;
+}
+
+.content-hidden .tag-line-text li {opacity: 0;}
+.content-hidden .tag-line-text li:nth-child(1) { transform: translate3d(-30px,0,0);}
+.content-hidden .tag-line-text li:nth-child(2) { transform: translate3d(0,20px,0);}
+.content-hidden .tag-line-text li:nth-child(3) { transform: translate3d(30px,0,0);}
+
+
+/* Pictures */
+
+.profile {
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+.abilities-img, .hobbies-img{
+  width: 15em;
+}
+
+
+/* Top */
+.fixed-top {
+  background-color: #90b0e3;
+  opacity: 0.97;
+  color: white;
+}
+
+.jumbotron {
+  padding: 0 0 2em 0;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.jumbotron-container {
+  padding: 3em 0;
+}
+
+/* Body */
+#body {
+  text-align: center;
+}
+
+/* Profile */
+.profile {
+  padding: 0 19%;
+}
+
+.personal-details, .abilities-details {
+  text-align: justify;
+  padding-top: 2em;
+}
+.propic {
+  border-radius: 100%;
+  width: 15em;
+}
+
+.details-row {
+  padding: 1em 0;
+}
+
+.profile-row {
+  padding-top: 2em;
+  text-align: justify;
+}
+
+.educations-institutions {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Abilities */
+.container-fluid {
+  padding-bottom: 1%;
+}
+
+.abilities {
+  padding: 1% 19%;
+}
+
+.abilities-row {
+  padding-bottom: 2%;
+}
+
+.right-abilities-img {
+  float: right;
+  width: 15em;
+  margin-left: 2%;
+}
+.container-fluid h5 {
+  font-weight: bold;
+  padding-bottom: 0.2em;
+}
+
+/* Working Experiences */
+.working-ex {
+  text-align: center;
+}
+
+.card-deck {
+  padding: 0 3em;
+  margin: 0;
+}
+
+.card-body {
+  text-align: justify;
+}
+
+/* Volunteer Experiences */
+.card-volunteer {
+  padding: 0 12em;
+  margin: 0;
+}
+
+.card-img-top {
+  height: 17em;
+}
+
+/* Hobbies */
+.hobbies {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  padding: 0 5em 2em;
+}
+
+.hobbies-title {
+  margin-top: 1em;
+}
+
+.hobbies-details {
+  text-align: justify;
+}
+
+/* Contact */
+.contact {
+  padding-bottom: 3em;
+}
+
+.contact-method {
+  margin: 2em 10em 0.5em;
+}
+
+.contact.row {
+  padding-top: 1em;
+}
+
+/* media query */
+/* For lg */
+@media screen and (max-width: 992px) {
+  /*navbar*/
+  .navbar {
+    padding: 1em 0.5em 0.5em;
+  }
+
+  /* profile */
+  .personal-details {
+    text-align: center;
+  }
+  .educations-time {
+    margin: 2% 0;
+  }
+  .educations-institutions {
+    margin: 1% -2% 1%;
+  }
+
+  /* abilities */
+  #experience-img, #solving-img, #programming-img {
+    text-align: center;
+  }
+
+  .right-abilities-img {
+    float: none;
+  }
+
+  .abilities-details h5 {
+    text-align: center;
+  }
+
+  /*cards*/
+  .card-deck {
+    padding: 0 23%;
+  }
+
+  /* hobbies */
+  .hobbies .row {
+    margin-left: 0;
+  }
+  .hobbies .col-lg-4 {
+    padding: 0 10%;
+  }
+
+  /* contact */
+  .contact-method {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .contact-method .btn{
+    margin: 2%;
+  }
+}
+
+/* For sm */
+@media only screen and (max-width: 500px) {
+  /* navbar */
+  .navbar {
+    padding: 1em 0.5em 0.5em;
+  }
+
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* profile */
+  .profile {
+    padding: 0;
+  }
+
+  .profile-row {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .personal-details {
+    text-align: center;
+  }
+
+  .profile .row {
+    margin: 0;
+  }
+  .educations-time {
+    margin: 2% 0;
+  }
+
+  .educations-institutions {
+    margin: 1% -2% 1%;
+  }
+  .educations-institutions .col-lg-4{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* abilities */
+  .abilities {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .abilities .row {
+    margin: 0;
+  }
+  .abilities-row .col {
+    padding: 0;
+  }
+  #experience-img, #solving-img, #programming-img {
+    text-align: center;
+  }
+
+  .right-abilities-img {
+    float: none;
+  }
+
+  .abilities-details h5 {
+    text-align: center;
+  }
+
+  .abilities-details {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  /*cards*/
+  .card-deck {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .card-deck .row {
+    margin: 0;
+  }
+
+  /* hobbies */
+  .hobbies {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .hobbies .row {
+    margin: 0;
+  }
+  .hobbies .col-lg-4 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hobbies-details {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  /* contact */
+  .contact-method {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .contact-method .btn{
+    margin: 2%;
+  }
+}
